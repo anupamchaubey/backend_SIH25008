@@ -3,6 +3,7 @@ package com.project.sih25008.controller;
 import com.project.sih25008.dto.AuthRequest;
 import com.project.sih25008.dto.AuthResponse;
 import com.project.sih25008.model.User;
+import com.project.sih25008.service.AuthService;
 import com.project.sih25008.service.UserService;
 import com.project.sih25008.security.JwtUtils;
 import lombok.RequiredArgsConstructor;
@@ -15,13 +16,13 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
 public class AuthController {
-    private final UserService userService;
     private final AuthenticationManager authenticationManager;
     private final JwtUtils jwtUtils;
-
+    private final AuthService authService;
     @PostMapping("/register")
     public User register(@RequestBody AuthRequest request) {
-        return userService.registerUser(request.getUsername(), request.getUsername()+"@mail.com", request.getPassword());
+        // call authService.register so password is encoded there
+        return authService.register(request.getUsername(), request.getUsername()+"@mail.com", request.getPassword());
     }
 
     @PostMapping("/login")
