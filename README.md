@@ -121,12 +121,20 @@ Access secured APIs like /api/projects/my
 
 ✅ Main APIs
 Method	Endpoint	Description
+
 POST	/api/auth/register	Register new user
+
 POST	/api/auth/login	Login and get JWT token
+
 POST	/api/projects	Create project
+
 GET	/api/projects/my	Get logged-in user's projects
+
 POST	/api/submissions	Submit project file
+
 GET	/api/submissions/project/{id}	Get submissions for a project
+
+
 ✅ Dependencies
 
 Spring Boot Starter Web
