@@ -82,9 +82,10 @@ src/main/java/com/project/sih25008
 ## ✅ Setup Instructions
 
 ### 1. Clone the Repository
-```bash[
+```bash
 git clone https://github.com/anupamchaubey/backend_SIH25008.git
 cd backend_SIH25008
+
 
 2. Configure application.properties
 
@@ -99,6 +100,10 @@ server.port=8080
 3. Build & Run
 mvn clean install
 mvn spring-boot:run
+
+```
+````.
+
 
 ✅ API Documentation (Swagger)
 
@@ -166,8 +171,6 @@ curl -X POST http://localhost:8080/api/auth/login \
 -H "Content-Type: application/json" \
 -d '{"username":"testuser","password":"password123"}'
 
-```
-````.
 
 
 
