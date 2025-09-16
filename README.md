@@ -31,6 +31,15 @@ This is the **backend service** for **SIH 2025 Problem Statement 25008**, built 
 
 ---
 
+🔥 Swagger UI Screenshots
+Authorize with JWT
+
+API Endpoints
+
+<img width="1850" height="875" alt="image" src="https://github.com/user-attachments/assets/7964c25c-753d-48f9-998c-fc1d4c297240" />
+<img width="1013" height="744" alt="image" src="https://github.com/user-attachments/assets/5c4aad33-c74b-4036-b08b-a170ac58377a" />
+<img width="1151" height="839" alt="image" src="https://github.com/user-attachments/assets/7a7abdde-5de4-42c2-bd54-5022954a01a6" />
+
 ## ✅ Project Structure
 src/main/java/com/project/sih25008
 │
@@ -132,14 +141,6 @@ Lombok
 
 Springdoc OpenAPI (Swagger)
 
-🔥 Swagger UI Screenshots
-Authorize with JWT
-
-API Endpoints
-
-<img width="1850" height="875" alt="image" src="https://github.com/user-attachments/assets/7964c25c-753d-48f9-998c-fc1d4c297240" />
-<img width="1013" height="744" alt="image" src="https://github.com/user-attachments/assets/5c4aad33-c74b-4036-b08b-a170ac58377a" />
-<img width="1151" height="839" alt="image" src="https://github.com/user-attachments/assets/7a7abdde-5de4-42c2-bd54-5022954a01a6" />
 
 
 ✅ Testing with cURL
@@ -156,6 +157,11 @@ Login:
 curl -X POST http://localhost:8080/api/auth/login \
 -H "Content-Type: application/json" \
 -d '{"username":"testuser","password":"password123"}'
+
+```
+````.
+
+
 
 ✅ License
 
