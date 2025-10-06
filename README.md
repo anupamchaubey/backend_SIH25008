@@ -1,4 +1,4 @@
-# 🚀 SIH25008 Backend (Spring Boot + MongoDB + JWT)
+# 🚀 SIH25008(Disaster Preparedness and Response Education System for Schools and Colleges) Backend (Spring Boot + MongoDB + JWT)
 
 This is the **backend service** for **SIH 2025 Problem Statement 25008**, built using:
 
